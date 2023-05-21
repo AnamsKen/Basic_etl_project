@@ -47,7 +47,7 @@ def job():
     print('scrapping jumia')
     scrape_jumia()
 
-schedule.every(1).minutes.do(job)
+schedule.every(24).hours.do(job)
 
 while True:
     schedule.run_pending()
